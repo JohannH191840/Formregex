@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            background-color: #9CBC2C;
+            width: 850px;
+            height: auto;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+      
+        }
+
+        
+        .box{
+            width: 700px;
+            height: auto;
+            background-color: #B9CF6A;
+            border: 3px solid white;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 3px;
+            padding: 5px;
+            text-align: start;
+        }
+
+        .steps{
+            text-align: start;
+            padding: 20px;
+        }
+
+        input{
+            font-size: 25px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 170px;
+            
+        
+        }
+
+        #btn{
+            margin-left: -50px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <form id="container">
+
+        <div id="box1" class="steps"> Step 1: Your details
+
+            <div id="name" class="box">
+              Name
+
+                <input type="text" placeholder="First and last Name" pattern="^[A-Za-z]{1,15}\s[A-Za-z]{1,15}$">
+
+            </div>
+
+            <div id="Email" class="box">Email
+
+                <input type="email" placeholder="example@domain.com" pattern="^[A-Za-z0-9]{1,}\@[a-z]{2,}\.[a-z]{3}$">
+            </div>
+
+            <div id="phone" class="box">Phone
+
+                <input type="text" placeholder="1112223333" pattern="^[0-9]{3}[0-9]{3}[0-9]{4}$">
+        </div>
+    </div>
+
+        <div id="box2" class="steps"> Step 2: Delivery address
+
+            <div id="Adress" class="box">Address
+
+                <input type="text" placeholder="Enter Address" pattern="^[0-9]{1,10}\s[A-Za-z]{1,10}\s[A-Za-z0-9]{1,10}\s[A-Za-z]{1,10}\s[A-Za-z]{1,10}\s[A-Za-z]{1,10}$">
+
+            </div>
+
+            <div id="PostCode" class="box"> Post Code
+
+                <input type="text" placeholder="Enter Post Code" pattern="^[0-9]{5}$">
+
+            </div>
+
+            <div id="Country" class="box"> Country
+
+                <input id="text" placeholder="Enter Country" pattern="^[A-Za-z]{1,20}$">
+
+            </div>
+
+        </div>
+
+        <div id="box3" class="steps"> Step 3: Card details
+
+            <div id="CardType" class="box">Card Type <br>
+
+                <input type="radio" id="Visa" value="visa"> Visa
+                <input type="radio" id="MasterCard" value="MasterCard"> Master Card
+
+            </div>
+
+            <div id="CardNumber" class="box"> Card number
+
+                <input type="text" placeholder="Enter Card Number" pattern="^[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}$">
+
+            </div>
+
+            <div id="Code" class="box">Security code
+
+                <input type="text" placeholder="Enter Security Code" pattern="^[0-9]{3}$">
+            
+            </div>
+
+            <div id="Name"class="box">Name on card
+
+                <input type="text" placeholder="Enter Name On Card" pattern="^[A-Za-z]{1,15}\s[A-Za-z]{1,15}$">
+
+            </div>
+        </div>
+        
+        <input type="submit" value="BUY IT!!!" id="btn">
+
+
+    </form>
+
+</body>
+
+</html>
